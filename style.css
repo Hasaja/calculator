@@ -32,14 +32,12 @@ span{
     border: 5px cornflowerblue solid;
     width: 450px;
     padding: 5px;
+    font-size: 25px;
 }
 
 #zero{
     width:224px;
 }
-
-@media(max-width:960px){
-    #answer{
-        border-top: 0px;
-    }
+#answer{
+    border-top: 0px;
 }
