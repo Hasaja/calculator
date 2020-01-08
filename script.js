@@ -8,7 +8,7 @@ var answerWindow= windows[1];
 function writeDown(value){
     console.log('결과는 ' + value);    
     if(value === 180){
-        value = '김재원';
+        value = '김재원 ㅂㅅ';
     }
     answerWindow.innerHTML = "<p>"+ value +"</p>";
 
