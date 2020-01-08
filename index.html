@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>계산기</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="name">계산기</div>
+        <div class = "mid">
+        <div class="result" id="midResult"><p>-</p></div id="result">
+        <div class="result" id="answer"><p>-</p></div id="result">
+        </div>
+        <div class="calculator">
+            <button type="button" onclick="codeSign('AC')">AC</button>
+            <button type="button" onclick="codeNumber('*(-1)')">+/-</button>
+            <button type="button" onclick="codeNumber('%')">%</button>
+            <button type="button" onclick="codeNumber('/')">÷</button>
+            <br>
+            <button type="button" onclick="codeNumber('7')">7</button>
+            <button type="button" onclick="codeNumber('8')">8</button>
+            <button type="button" onclick="codeNumber('9')">9</button>
+            <button type="button" onclick="codeNumber('*')">X</button>
+            <br>
+            <button type="button" onclick="codeNumber('4')">4</button>
+            <button type="button" onclick="codeNumber('5')">5</button>
+            <button type="button" onclick="codeNumber('6')">6</button>
+            <button type="button" onclick="codeNumber('-')">-</button>
+            <br>
+            <button type="button" onclick="codeNumber('1')">1</button>
+            <button type="button" onclick="codeNumber('2')">2</button>
+            <button type="button" onclick="codeNumber('3')">3</button>
+            <button type="button" onclick="codeNumber('+')">+</button>
+            <br>
+            <button type="button" onclick="codeNumber('0')" id="zero">0</button>
+            <button type="button" onclick="codeNumber('.')">.</button>
+            <button type="button" onclick="codeSign('=')">=</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
