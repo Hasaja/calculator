@@ -27,11 +27,15 @@ function writeDown(value){
 }
 
 function codeNumber(number){
-    if(number === '0' && midResult=== '0'){
-        return;
+
+    if(midResult === '0' && !(number === '.')){
+        midResult = number;
     }
-    //일단 문자를 모두 받아보자!
-    midResult += number;
+    else{
+        //일단 문자를 모두 받아보자!
+        midResult += number;
+    }
+
     //단순히 문자를 받아서 차곡차곡 쌓은 midResult를 만든 상황!
     console.log(midResult);
     midResultWindow.innerHTML = "<p>"+ midResult +"</p>";
