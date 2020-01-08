@@ -1,6 +1,6 @@
 
 
-var midResult = "";
+var midResult = "0";
 var windows = document.getElementsByClassName("result");
 var midResultWindow= windows[0];
 var answerWindow= windows[1];
@@ -27,11 +27,9 @@ function writeDown(value){
 }
 
 function codeNumber(number){
-
-    if(number === '0' && midResult.length === 0){
+    if(number === '0' && midResult=== '0'){
         return;
     }
-
     //일단 문자를 모두 받아보자!
     midResult += number;
     //단순히 문자를 받아서 차곡차곡 쌓은 midResult를 만든 상황!
@@ -49,15 +47,15 @@ function codeSign(sign){
         //이제 계산할 시간! midResult를 calculate 함수에 넣어보자
         console.log("중간 결과물은 " + midResult);
         writeDown(result);
-        midResult = result;
+        midResult = String(result);
     }
 }
 
 function reset(){
     console.log("Reset");
-    midResult = "";
-    midResultWindow.innerHTML = "<p>-</p>";
-    answerWindow.innerHTML = "<p>-</p>";
+    midResult = "0";
+    midResultWindow.innerHTML = "<p>0</p>";
+    answerWindow.innerHTML = "<p>0</p>";
 }
 
 function calculate(something){
