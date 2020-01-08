@@ -10,6 +10,18 @@ function writeDown(value){
     if(value === 180){
         value = '김재원 ㅂㅅ';
     }
+    else if(value === 100){
+        value = '안재헌 발부';
+    }
+    else if(value === 1471 || value === 825){
+        value = '이나기 게이';
+    }
+    else if(value === 183){
+        value = '민규 키가 183이라고?';
+    }
+    else if(value <= 182 && value > 180){
+        value = '대충 하승준 키';
+    }
     answerWindow.innerHTML = "<p>"+ value +"</p>";
 
 }
