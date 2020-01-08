@@ -13,7 +13,7 @@ function writeDown(value){
     else if(value === 100){
         value = '안재헌 발부';
     }
-    else if(value === 1471 || value === 825){
+    else if(value === 1471){
         value = '이나기 게이';
     }
     else if(value === 183){
@@ -27,6 +27,11 @@ function writeDown(value){
 }
 
 function codeNumber(number){
+
+    if(number === '0' && midResult.length === 0){
+        return;
+    }
+
     //일단 문자를 모두 받아보자!
     midResult += number;
     //단순히 문자를 받아서 차곡차곡 쌓은 midResult를 만든 상황!
@@ -56,6 +61,6 @@ function reset(){
 }
 
 function calculate(something){
-    result = eval(something);
+    result = Function('"use strict";return (' + something + ')')();
     return result;
 }
